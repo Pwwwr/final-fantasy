@@ -28,7 +28,6 @@ html {
     color: var(--enlaces-menu);
     font-size: 1.125rem;
     font-weight: bolder;
-    margin-right: 1%;
     text-decoration: none;
 }
 
@@ -50,13 +49,6 @@ html {
     padding-top: 20px;
 }
 
-#header-principal .inferior .header-secundario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 40%;
-}
-
 #header-principal .inferior .imagen {
     width: 235px;
     height: 150px;
@@ -67,14 +59,14 @@ html {
     height: 100%;
 }
 
-#header-principal .inferior .header-secundario h1 {
+#header-principal .inferior h1 {
     font-size: 2.5rem;
     margin-bottom: 8px;
     font-weight: bolder;
     text-shadow: black 0.05em 0.05em 0.05em;
 }
 
-#header-principal .inferior .header-secundario p {
+#header-principal .inferior p {
     font-size: 0.9375rem;
 }
 
@@ -102,6 +94,7 @@ html {
 
 #menu-lateral nav ul li {
     align-items: center;
+    background: #fff;
     border-bottom: #f0f0f0 1px solid;
     padding: 0 15px;
     height: 44px;
@@ -124,4 +117,13 @@ html {
 
 /*Article*/
 
-main {}
+main {
+    background: #eceff1;
+    display: flex;
+    padding: var(--padding-general);
+    padding-top: 20px;
+}
+
+main article {
+    width: 65%;
+}
